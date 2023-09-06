@@ -1,5 +1,5 @@
 import './navBar.css'
-import Cart from '../cartWidget/CartWidget'
+import CartWidget from '../cartWidget/CartWidget'
 
 
 function NavBar() {
@@ -7,7 +7,7 @@ function NavBar() {
         <div className='navBar'>
             <span> </span>
             <span className='title'>7_Component</span>
-            <Cart/>
+            <CartWidget/>
         </div>
     )
 }
