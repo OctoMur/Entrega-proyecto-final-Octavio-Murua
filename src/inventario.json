@@ -1,0 +1,34 @@
+[
+    {
+        "id": "RadeonRX5600XT",
+        "category": "Hardware",
+        "subCategory": "VideoCard",
+        "price": 150000,
+        "img": "../src/assets/card/RogStrix.png",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
+    },
+    {
+        "id": "IntelI510-400f",
+        "category": "Hardware",
+        "subCategory": "Processor",
+        "price": 100000,
+        "img": "../src/assets/card/i5-10400f.png",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
+    },
+    {
+        "id": "TUFA15",
+        "category": "Equipment",
+        "subCategory": "Notebooks",
+        "price": 100000,
+        "img": "../src/assets/card/TUF.png",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
+    },
+    {
+        "id": "CougarTerminator",
+        "category": "Furniture",
+        "subCategory": "Chairs",
+        "price": 200000,
+        "img": "../src/assets/card/Cougar.png",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
+    }
+]

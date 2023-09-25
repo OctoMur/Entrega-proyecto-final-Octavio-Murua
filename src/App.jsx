@@ -1,38 +1,32 @@
 
 import { useState, useEffect } from 'react'
 import './App.css'
-import ItemCardContaner from './components/ItemCardContaner/ItemCardContaner'
-import NavBar from './components/NavBar/NavBar'
-import ItemListContaner from './components/listContaner/ItemListContaner'
+import data from './inventario.json'
+import Navigation from './routes/Navigation'
+import Home from './pages/Home'
+import Header from './components/header/Header'
 
 function App() {
 
   const [productos, setProductos] = useState([])
 
-  const getProductos = async () => {
-    try{
-      const data = await fetch('./inventario.json')
-      setProductos(data)
-    }
-    catch(error){
-      console.error(error)
-    }
-    
+  const getData = () =>{
+      return new Promise((resolve, reject) =>{
+          resolve(data)
+      })
   }
   
-
-  useEffect( () => {
-    getProductos()
+  useEffect(()=>{
+      getData()
+      .then((res) => {
+          setProductos(res)
+      })
   }, [])
-
-
-  console.log(productos)
-
+    
   return (
     <>
-      <NavBar />
-      <ItemListContaner/>
-      {/* <ItemCardContaner/> */}
+      <Header/>
+      <Navigation products={productos}/>
     </>
   )
 }
