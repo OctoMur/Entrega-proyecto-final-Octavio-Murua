@@ -1,27 +1,29 @@
 import ItemDetailsContaner from "../components/itemDetailsCotaner/ItemDetailsContaner"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import Header from '../components/header/Header'
 
 function ItemDetail({productsForFilter}) {
 
     const [productSelect, setProductSelect] = useState({})
-    const idProductParam = useParams()
-    
+    const {id} = useParams()
+
+    const idProductParam = id.toString()
+    console.log(idProductParam)
 
     useEffect(() => {
 
         const result = productsForFilter.find((prod) => prod.id === idProductParam)
 
         setProductSelect(result)
-        console.log(result)
     }, [idProductParam, productsForFilter])
-    console.log(productsForFilter)
-
-    console.log(idProductParam)
     
 
     return (
-        <ItemDetailsContaner productSelected = {productSelect}/>
+        <>
+            <Header/>
+            <ItemDetailsContaner productSelected = {productSelect}/>
+        </>
     )
 }
 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './itemListaContaner.css'
 
 function ItemListContaner() {
@@ -6,9 +7,10 @@ function ItemListContaner() {
         <div className='itemListContaner'>
 
             <li className="contaner">
-                <span>categoria</span>
-                <span>categoria</span>
-                <span>categoria</span>
+                <Link to={'/'}>Todo</Link>
+                <Link to={'/category/Hardware'}>Hardware</Link>
+                <Link to={'/category/Equipment'}>Equipment</Link>
+                <Link to={'/category/Furniture'}>Furniture</Link>
             </li>
         </div>
     )

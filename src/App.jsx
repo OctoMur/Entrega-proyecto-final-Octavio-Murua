@@ -3,8 +3,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import data from './inventario.json'
 import Navigation from './routes/Navigation'
-import Home from './pages/Home'
-import Header from './components/header/Header'
+
 
 function App() {
 
@@ -25,7 +24,6 @@ function App() {
     
   return (
     <>
-      <Header/>
       <Navigation products={productos}/>
     </>
   )

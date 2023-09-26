@@ -4,31 +4,71 @@
         "category": "Hardware",
         "subCategory": "VideoCard",
         "price": 150000,
-        "img": "../src/assets/card/RogStrix.png",
+        "img": "../public/card/RogStrix.png",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
     },
     {
-        "id": "IntelI510-400f",
+        "id": "Intel-I5-10-400f",
         "category": "Hardware",
         "subCategory": "Processor",
         "price": 100000,
-        "img": "../src/assets/card/i5-10400f.png",
+        "img": "../public/card/i5-10400f.png",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
     },
     {
-        "id": "TUFA15",
+        "id": "TUF-A15",
         "category": "Equipment",
         "subCategory": "Notebooks",
         "price": 100000,
-        "img": "../src/assets/card/TUF.png",
+        "img": "../public/card/TUF.png",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
     },
     {
-        "id": "CougarTerminator",
+        "id": "Cougar-Terminator",
         "category": "Furniture",
         "subCategory": "Chairs",
         "price": 200000,
-        "img": "../src/assets/card/Cougar.png",
+        "img": "../public/card/Cougar.png",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
+    },
+    {
+        "id": "Aorus-B650-Elite-AX",
+        "category": "Hardware",
+        "subCategory": "MotherBoards",
+        "price": 260000,
+        "img": "../public/card/Aorus.png",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
+    },
+    {
+        "id": "IdCooling-FrostFlow-120",
+        "category": "Hardware",
+        "subCategory": "Refrigeration",
+        "price": 60000,
+        "img": "../public/card/Idcooling.png",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
+    },
+    {
+        "id": "Razer-Kraken",
+        "category": "Audio",
+        "subCategory": "Headphones",
+        "price": 95000,
+        "img": "../public/card/Razer.png",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
+    },
+    {
+        "id": "Sentey-K20",
+        "category": "Hardware",
+        "subCategory": "ComputerCases",
+        "price": 85000,
+        "img": "../public/card/Sentey.png",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
+    },
+    {
+        "id": "XPGSpectrix-S40G",
+        "category": "Hardware",
+        "subCategory": "Storage",
+        "price": 45000,
+        "img": "../public/card/Xpg.png",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
     }
 ]

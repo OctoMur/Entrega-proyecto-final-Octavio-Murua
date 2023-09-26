@@ -1,12 +1,13 @@
 import './navBar.css'
 import CartWidget from '../cartWidget/CartWidget'
+import { Link } from 'react-router-dom'
 
 
 function NavBar() {
     return (
         <div className='navBar'>
             <span> </span>
-            <a href="#" className='title'>7_Component</a>
+            <Link to={'/'} className='title'>7_Component</Link>
             <CartWidget/>
         </div>
     )
