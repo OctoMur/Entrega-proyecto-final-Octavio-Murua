@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import './itemListaContaner.css'
+import './CategoryContaner.css'
 
-function ItemListContaner() {
+function CategoryContaner() {
 
     return (
         <div className='itemListContaner'>
@@ -16,4 +16,4 @@ function ItemListContaner() {
     )
 }
 
-export default ItemListContaner
+export default CategoryContaner

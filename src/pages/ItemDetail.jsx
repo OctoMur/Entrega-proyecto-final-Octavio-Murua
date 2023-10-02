@@ -1,22 +1,27 @@
 import ItemDetailsContaner from "../components/itemDetailsCotaner/ItemDetailsContaner"
+import {getData} from "../functions/importProducts"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import Header from '../components/header/Header'
+import Header from '../components/Header/Header'
 
-function ItemDetail({productsForFilter}) {
-
+function ItemDetail() {
+    const [products, setProducts] = useState([])
     const [productSelect, setProductSelect] = useState({})
     const {id} = useParams()
 
     const idProductParam = id.toString()
-    console.log(idProductParam)
+
+    useEffect(()=>{
+        getData()
+        .then((res) => setProducts(res))
+    }, [])
 
     useEffect(() => {
 
-        const result = productsForFilter.find((prod) => prod.id === idProductParam)
+        const result = products.find((prod) => prod.id === idProductParam)
 
         setProductSelect(result)
-    }, [idProductParam, productsForFilter])
+    }, [idProductParam, products])
     
 
     return (

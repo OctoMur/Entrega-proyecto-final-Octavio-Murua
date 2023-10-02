@@ -1,5 +1,5 @@
 import NavBar from "../navBar/NavBar"
-import ItemListContaner from "../listContaner/ItemListContaner"
+import CategoryContaner from "../CategoryContaner/CategoryContaner"
 
 
 
@@ -7,7 +7,7 @@ function Header() {
     return (
         <>
             <NavBar/>
-            <ItemListContaner/>
+            <CategoryContaner/>
         </>
     )
 }

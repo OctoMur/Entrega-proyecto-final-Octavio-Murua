@@ -1,11 +1,12 @@
 
-import ItemCardContaner from "../components/itemCardContaner/ItemCardContaner"
-import Header from '../components/header/Header'
+import ItemListContaner from "../components/ItemListContaner/itemListContaner"
+import Header from '../components/Header/Header'
+
 function Home({productos}) {
     return (
         <>
             <Header/>
-            <ItemCardContaner productos = {productos}/>
+            <ItemListContaner productos = {productos}/>
         </>
     )
 }

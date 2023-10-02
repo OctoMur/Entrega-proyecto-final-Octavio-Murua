@@ -1,23 +1,14 @@
 import { useState,useEffect } from "react"
 import { useParams} from "react-router-dom"
-import ItemCardContaner from "../components/itemCardContaner/ItemCardContaner"
-import Header from "../components/header/Header"
+import ItemListContaner from "../components/ItemListContaner/itemListContaner"
+import Header from "../components/Header/Header"
 
-function CategoryPage({productsForFilter}) {
-
-    const [productsFiltered, setProductsFiltered] = useState([])
-    const {idCategory} = useParams()
-    
-    useEffect(() => {
-        const result = productsForFilter.filter((producto) => producto.category === idCategory)
-        setProductsFiltered(result)
-
-    },[idCategory,productsForFilter])
+function CategoryPage() {
 
     return (
         <>
             <Header/>
-            <ItemCardContaner productos = {productsFiltered}/>
+            <ItemListContaner/>
         </>
     )
 }

@@ -4,7 +4,7 @@
         "category": "Hardware",
         "subCategory": "VideoCard",
         "price": 150000,
-        "img": "../public/card/RogStrix.png",
+        "img": "../src/assets/card/RogStrix.png",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
     },
     {
@@ -12,7 +12,7 @@
         "category": "Hardware",
         "subCategory": "Processor",
         "price": 100000,
-        "img": "../public/card/i5-10400f.png",
+        "img": "../src/assets/card/i5-10400f.png",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
     },
     {
@@ -20,7 +20,7 @@
         "category": "Equipment",
         "subCategory": "Notebooks",
         "price": 100000,
-        "img": "../public/card/TUF.png",
+        "img": "../src/assets/card/TUF.png",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
     },
     {
@@ -28,7 +28,7 @@
         "category": "Furniture",
         "subCategory": "Chairs",
         "price": 200000,
-        "img": "../public/card/Cougar.png",
+        "img": "../src/assets/card/Cougar.png",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
     },
     {
@@ -36,7 +36,7 @@
         "category": "Hardware",
         "subCategory": "MotherBoards",
         "price": 260000,
-        "img": "../public/card/Aorus.png",
+        "img": "../src/assets/card/Aorus.png",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
     },
     {
@@ -44,7 +44,7 @@
         "category": "Hardware",
         "subCategory": "Refrigeration",
         "price": 60000,
-        "img": "../public/card/Idcooling.png",
+        "img": "../src/assets/card/Idcooling.png",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
     },
     {
@@ -52,7 +52,7 @@
         "category": "Audio",
         "subCategory": "Headphones",
         "price": 95000,
-        "img": "../public/card/Razer.png",
+        "img": "../src/assets/card/Razer.png",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
     },
     {
@@ -60,7 +60,7 @@
         "category": "Hardware",
         "subCategory": "ComputerCases",
         "price": 85000,
-        "img": "../public/card/Sentey.png",
+        "img": "../src/assets/card/Sentey.png",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
     },
     {
@@ -68,7 +68,7 @@
         "category": "Hardware",
         "subCategory": "Storage",
         "price": 45000,
-        "img": "../public/card/Xpg.png",
+        "img": "../src/assets/card/Xpg.png",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan."
     }
 ]

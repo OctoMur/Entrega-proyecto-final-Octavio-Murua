@@ -4,21 +4,22 @@ import ItemDetail from "../pages/ItemDetail";
 import Category from "../pages/Category";
 
 
-const Navigation = ({products}) =>{
+const Navigation = () =>{
     
     const routes = createBrowserRouter([
         {
             path: "/",
-            element: <Home productos = {products}/>
-        },
-        {
-            path:"/product/:id",
-            element: <ItemDetail productsForFilter = {products}/>
+            element: <Home />
         },
         {
             path:"/category/:idCategory",
-            element: <Category productsForFilter = {products}/>
+            element: <Category />
+        },
+        {
+            path:"/item/:id",
+            element: <ItemDetail />
         }
+        
     ])
     return(<RouterProvider router={routes}/>)
 }
