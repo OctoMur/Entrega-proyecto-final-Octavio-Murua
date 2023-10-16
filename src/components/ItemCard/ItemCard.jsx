@@ -1,14 +1,14 @@
 import "./ItemCard.css"
 import { Link } from "react-router-dom"
 
-const ItemCard = ({producto}) => {
+const ItemCard = ({product}) => {
     
     return(
         <div className="card">
-            <img src={producto.img} alt={producto.id} className="imgProduct"/>
-            <h2>{producto.id}</h2>
-            <h4>${producto.price}</h4>
-            <Link to={`/item/${producto.id}`}>Ver detalle</Link>
+            <img src={product.img} alt={product.id} className="imgProduct"/>
+            <h2>{product.id}</h2>
+            <h4>${product.price}</h4>
+            <Link to={`/item/${product.id}`}>Ver detalle</Link>
         </div>
     )
 }

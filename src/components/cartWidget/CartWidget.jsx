@@ -1,10 +1,22 @@
-import cart from '../../assets/icons/cart.svg'
+import { useContext} from 'react'
+import cartIcon from '../../assets/icons/cart.svg'
+import { CartCntxt } from '../../context/CartContext'
+import { Link } from 'react-router-dom'
 
 function CartWidget() {
+    const {totalQuantity} = useContext(CartCntxt)
+
+    const cartWidgetStyle = {
+        display: totalQuantity === 0 ? 'none' : 'block',
+    };
+
     return (
-        <div>
-            <span><img src={cart} alt=""/>+99</span>
-        </div>
+        <Link to={'/cart'}>
+            <div>
+                <span style={cartWidgetStyle}>{totalQuantity}</span>
+                <img src={cartIcon} alt=""/>
+            </div>
+        </Link>
     )
 }
 

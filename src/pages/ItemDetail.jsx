@@ -1,20 +1,16 @@
 import ItemDetailsContaner from "../components/itemDetailsCotaner/ItemDetailsContaner"
-import {getData} from "../functions/importProducts"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import Header from '../components/Header/Header'
+import { inventoryContext } from "../context/InventoryContext"
+import Layout from "../components/Layout/Layout"
+
 
 function ItemDetail() {
-    const [products, setProducts] = useState([])
+    const {products} = useContext(inventoryContext)
     const [productSelect, setProductSelect] = useState({})
     const {id} = useParams()
 
     const idProductParam = id.toString()
-
-    useEffect(()=>{
-        getData()
-        .then((res) => setProducts(res))
-    }, [])
 
     useEffect(() => {
 
@@ -25,10 +21,9 @@ function ItemDetail() {
     
 
     return (
-        <>
-            <Header/>
+        <Layout>
             <ItemDetailsContaner productSelected = {productSelect}/>
-        </>
+        </Layout>
     )
 }
 

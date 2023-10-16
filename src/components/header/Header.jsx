@@ -3,11 +3,12 @@ import CategoryContaner from "../CategoryContaner/CategoryContaner"
 
 
 
-function Header() {
+function Header({}) {
     return (
         <>
             <NavBar/>
             <CategoryContaner/>
+
         </>
     )
 }

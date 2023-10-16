@@ -1,6 +1,9 @@
+import ItemCount from '../ItemCount/ItemCount';
 import './ItemDetailsContaner.css'
 
+
 function ItemDetailsContaner({ productSelected }) {
+
     return (
         <div>
             {productSelected ?
@@ -9,6 +12,7 @@ function ItemDetailsContaner({ productSelected }) {
                 <h1>{productSelected.id}</h1>
                 <h2>${productSelected.price}</h2>
                 <p>{productSelected.description}</p>
+                <ItemCount productSelected={productSelected}/>
             </div>
             :
             <h1>Cargando...</h1>}

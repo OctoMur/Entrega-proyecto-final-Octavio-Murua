@@ -1,20 +1,17 @@
-import { useState, useEffect } from "react"
-import {getData} from "../../functions/importProducts"
+import { useState, useEffect, useContext } from "react"
 import ItemCard from "../ItemCard/ItemCard"
 import "./ItemListContaner.css"
 import { useParams } from "react-router-dom"
+import Layout from "../Layout/Layout"
 
+import {inventoryContext} from "../../context/InventoryContext"
 
 const ItemListContaner = () =>{
-
-    const [products, setProducts] = useState([])
+    const {products} = useContext(inventoryContext)
     const {idCategory} = useParams()
     const [productsSelected, setProductsSelected] = useState([])
 
-    useEffect(()=>{
-        getData()
-        .then((res) => setProducts(res))
-    }, [])
+
 
     useEffect(() => {
         idCategory != undefined ? 
@@ -22,19 +19,20 @@ const ItemListContaner = () =>{
         setProductsSelected(products.filter((products) => products.category === idCategory))
         :
         setProductsSelected(products)
-
-
-        console.log(productsSelected)
     }, [idCategory, products])
 
+
     return(
-        <div className="contanerCard">
+        <Layout>
+            <div className="contanerCard">
             {productsSelected.map((prod) =>{
                 return(
-                    <ItemCard key = {prod.id} producto = {prod}/>
+                    <ItemCard key = {prod.id} product = {prod}/>
                 )
-            })}
+            })
+            }
         </div>
+        </Layout>
     )
 }
 

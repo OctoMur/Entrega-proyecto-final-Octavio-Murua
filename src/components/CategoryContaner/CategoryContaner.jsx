@@ -8,9 +8,9 @@ function CategoryContaner() {
 
             <li className="contaner">
                 <Link to={'/'}>Todo</Link>
-                <Link to={'/category/Hardware'}>Hardware</Link>
-                <Link to={'/category/Equipment'}>Equipment</Link>
-                <Link to={'/category/Furniture'}>Furniture</Link>
+                <Link to={'/category/Hardware'}>Componentes</Link>
+                <Link to={'/category/Equipment'}>Equipos</Link>
+                <Link to={'/category/Furniture'}>Muebles</Link>
             </li>
         </div>
     )
