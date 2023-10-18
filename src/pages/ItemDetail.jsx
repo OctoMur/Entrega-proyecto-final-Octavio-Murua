@@ -1,23 +1,39 @@
 import ItemDetailsContaner from "../components/itemDetailsCotaner/ItemDetailsContaner"
-import { useContext, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { inventoryContext } from "../context/InventoryContext"
 import Layout from "../components/Layout/Layout"
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../db/db"
 
 
 function ItemDetail() {
-    const {products} = useContext(inventoryContext)
     const [productSelect, setProductSelect] = useState({})
-    const {id} = useParams()
+    const { id } = useParams()
 
-    const idProductParam = id.toString()
+    console.log(id)
+
 
     useEffect(() => {
+        const product = doc(db, "products", "id")
+        console.log(id)
 
-        const result = products.find((prod) => prod.id === idProductParam)
 
-        setProductSelect(result)
-    }, [idProductParam, products])
+        getDoc(product).then((res) => {
+
+            if(res.exists()){
+                const productImport = {
+                    id: res.id,
+                    ...res.data()
+                }
+                console.log(productImport)
+                setProductSelect(productImport)
+            }
+            else{
+                console.log("este producto no existe")
+                console.log(res.exists())
+            }
+        })
+    }, [id])
     
 
     return (

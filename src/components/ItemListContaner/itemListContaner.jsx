@@ -1,25 +1,33 @@
-import { useState, useEffect, useContext } from "react"
-import ItemCard from "../ItemCard/ItemCard"
-import "./ItemListContaner.css"
+import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
+import {db} from "../../db/db"
+import ItemCard from "../ItemCard/ItemCard"
 import Layout from "../Layout/Layout"
+import "./ItemListContaner.css"
+import { collection, getDocs, query, where } from "firebase/firestore"
 
-import {inventoryContext} from "../../context/InventoryContext"
 
 const ItemListContaner = () =>{
-    const {products} = useContext(inventoryContext)
     const {idCategory} = useParams()
     const [productsSelected, setProductsSelected] = useState([])
 
 
 
     useEffect(() => {
-        idCategory != undefined ? 
-        
-        setProductsSelected(products.filter((products) => products.category === idCategory))
-        :
-        setProductsSelected(products)
-    }, [idCategory, products])
+        const productsList = collection(db, "products")
+        const filterForCategory = idCategory && query(productsList, where("category", "==", idCategory))
+        const queryRef = idCategory ? filterForCategory : productsList
+
+        getDocs(queryRef).then((res) => {
+            const productsImport = res.docs.map((prod)=>(
+                {
+                    id: prod.id,
+                    ...prod.data()
+                }
+            ))
+            setProductsSelected(productsImport)
+        })
+    }, [idCategory])
 
 
     return(
@@ -27,7 +35,7 @@ const ItemListContaner = () =>{
             <div className="contanerCard">
             {productsSelected.map((prod) =>{
                 return(
-                    <ItemCard key = {prod.id} product = {prod}/>
+                    <ItemCard key = {prod.name} product = {prod}/>
                 )
             })
             }

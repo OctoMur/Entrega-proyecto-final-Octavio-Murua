@@ -8,8 +8,8 @@ function ItemDetailsContaner({ productSelected }) {
         <div>
             {productSelected ?
             <div className='itemDetailsContaner'>
-                <img src={productSelected.img} alt={productSelected.id} />
-                <h1>{productSelected.id}</h1>
+                <img src={productSelected.img} alt={productSelected.name} />
+                <h1>{productSelected.name}</h1>
                 <h2>${productSelected.price}</h2>
                 <p>{productSelected.description}</p>
                 <ItemCount productSelected={productSelected}/>

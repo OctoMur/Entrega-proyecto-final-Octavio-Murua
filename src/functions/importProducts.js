@@ -1,4 +1,4 @@
-import data from '../inventario.json'
+import data from '../invetoryArticles.json'
 
 export const getData = () =>{
     return new Promise((resolve, reject) =>{

@@ -14,7 +14,7 @@ const CartContext = ({children}) => {
         const productToAdd={...productSelected, quantity}
 
         const backUpCart = [...cart]
-        const searchProduct = backUpCart.find((prod) => prod.id === productToAdd.id)
+        const searchProduct = backUpCart.find((prod) => prod.name === productToAdd.name)
 
         if(searchProduct){
             searchProduct.quantity += quantity
@@ -27,7 +27,7 @@ const CartContext = ({children}) => {
 
     const removeOfCart = ({product}) => {
 
-        const productForRemove = cart.findIndex((prod) => prod.id === product.id)
+        const productForRemove = cart.findIndex((prod) => prod.name === product.name)
 
         cart.splice(productForRemove, 1)
         accQuantity()
@@ -43,7 +43,7 @@ const CartContext = ({children}) => {
     }
 
     const isInCart = ({productSelected}) =>{
-        const searchProduct = cart.find((prod) => prod.id === productSelected.id)
+        const searchProduct = cart.find((prod) => prod.name === productSelected.name)
 
         searchProduct !== undefined ? 
         console.log("Este producto ya esta en el carrito") 

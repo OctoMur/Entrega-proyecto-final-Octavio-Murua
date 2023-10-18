@@ -7,8 +7,8 @@ const ItemCardToCart = ({product}) => {
 
     return (
         <div className='itemCardToCart'>
-            <img src={product.img} alt={product.id} />
-            <h2>{product.id}</h2>
+            <img src={product.img} alt={product.name} />
+            <h2>{product.name}</h2>
             <h3>Cantidad: {product.quantity}</h3>
             <h4>Precio por unidad: ${product.price}</h4>
             <h1>PrecioTotal: ${totalProduct}</h1>
