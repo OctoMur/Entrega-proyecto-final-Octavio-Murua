@@ -1,6 +1,7 @@
 .itemDetailsContaner{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid black;
     width: fit-content;
 }
@@ -8,4 +9,5 @@
 .itemDetailsContaner img{
     width: 500px;
     height: auto;
+    padding: 10px;
 }

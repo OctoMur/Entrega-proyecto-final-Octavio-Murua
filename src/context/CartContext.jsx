@@ -1,13 +1,12 @@
-import { createContext, useContext, useState } from "react"
+import { createContext, useState } from "react"
 
 export const CartCntxt = createContext();
 
 const CartContext = ({children}) => {
-
-    const [cart, setCart] = useState([])
+    const cartInStorage = JSON.parse(localStorage.getItem('cart')) || [];
+    const [cart, setCart] = useState(cartInStorage)
     const [totalQuantity, setTotalQuantity] = useState(0)
-    console.log(cart)//eliminar
-
+    
 
     const addToCart = ({productSelected, quantity}) =>{
 
@@ -23,6 +22,7 @@ const CartContext = ({children}) => {
         else{
             setCart( [...cart, productToAdd] )
         }
+        accQuantity()
     }
 
     const removeOfCart = ({product}) => {
@@ -32,14 +32,11 @@ const CartContext = ({children}) => {
         cart.splice(productForRemove, 1)
         accQuantity()
 
-        console.log(productForRemove)
-        console.log(cart) // eliminar
     }
 
     const clear = () => {
         cart.splice(0, cart.length)
         accQuantity()
-        console.log(cart)//eliminar
     }
 
     const isInCart = ({productSelected}) =>{
@@ -54,10 +51,18 @@ const CartContext = ({children}) => {
     const accQuantity = () =>{
         const quantityPerProduct = cart.reduce((acc, prod) => acc + prod.quantity, 0)
         setTotalQuantity(quantityPerProduct)
+        localStorage.setItem('cart', JSON.stringify(cart));
+        console.log(localStorage)
     }
 
+    const calculateValueCart = () =>{
+        const valueCart = cart.reduce((acc, prod) => acc + prod.quantity * prod.price, 0)
+        return valueCart;
+    }
+
+
     return (
-        <CartCntxt.Provider value={{cart, setCart, addToCart, removeOfCart, clear, isInCart, accQuantity, totalQuantity, setTotalQuantity}}>
+        <CartCntxt.Provider value={{cart, setCart, addToCart, removeOfCart, clear, isInCart, accQuantity, totalQuantity, setTotalQuantity, calculateValueCart}}>
             {children}
         </CartCntxt.Provider>
     )

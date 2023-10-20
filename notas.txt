@@ -1,2 +1,0 @@
--pulir codigo cart context
--cambiar logica de los productos y hacer que haga una solicitu a la db por cada cambio de categoria o por cada detalle de producto que haga

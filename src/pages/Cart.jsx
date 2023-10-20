@@ -5,17 +5,13 @@ import ItemCardToCart from '../components/ItemCardToCart/ItemCardToCart'
 import { Link } from 'react-router-dom'
 
 const Cart = () => {
-    const {cart,clear} = useContext(CartCntxt)
+    const {cart,clear, calculateValueCart} = useContext(CartCntxt)
     const [cartValue, setCartValue] = useState(0)
 
-    const calculateValueCart = () =>{
-        const valueCart = cart.reduce((acc, prod) => acc + prod.quantity * prod.price, 0)
-        setCartValue(valueCart)
-        console.log(valueCart)
-    }
+
 
     useEffect(()=>{
-        calculateValueCart()
+        setCartValue(calculateValueCart)
     },[calculateValueCart])
 
     return (
@@ -24,7 +20,7 @@ const Cart = () => {
                 {!cart.length ? 
                     <div>
                         <h1>CARRITO VACIO</h1>
-                        <Link to={'/'}>Home</Link>
+                        <Link to={'/'}><h3>VOLVER AL HOME</h3></Link>
                     </div>
                     :
                     <>
@@ -41,7 +37,10 @@ const Cart = () => {
                             <h1>Total de la compra: ${cartValue}</h1>
                         </div>
 
-                        <button onClick={()=>clear()}>Limpiar Carrito</button>
+                        <button onClick={()=>clear()}><h2>Limpiar Carrito</h2></button>
+                        <Link to={'/checkout'}>
+                            <button><h2>Finalizar compra</h2></button>
+                        </Link>
                     </>
                 }
             </div>

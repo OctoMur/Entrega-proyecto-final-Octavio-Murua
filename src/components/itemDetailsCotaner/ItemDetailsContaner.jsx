@@ -5,9 +5,9 @@ import './ItemDetailsContaner.css'
 function ItemDetailsContaner({ productSelected }) {
 
     return (
-        <div>
+        <div className='itemDetailsContaner'>
             {productSelected ?
-            <div className='itemDetailsContaner'>
+            <div >
                 <img src={productSelected.img} alt={productSelected.name} />
                 <h1>{productSelected.name}</h1>
                 <h2>${productSelected.price}</h2>

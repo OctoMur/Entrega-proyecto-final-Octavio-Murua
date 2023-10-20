@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Radeon RX 5600 XT",
+        "category": "Hardware",
+        "subCategory": "VideoCard",
+        "price": 150000,
+        "img": "https://firebasestorage.googleapis.com/v0/b/component-2e6f5.appspot.com/o/RogStrix.png?alt=media&token=dd589008-15fd-4c1e-8cd5-97afaedb88cd&_gl=1*b1illu*_ga*ODY5MTE0MzA1LjE2OTQ3ODMxMDU.*_ga_CW55HF8NVT*MTY5NzU4MDQyNC45LjEuMTY5NzU4NDUyMS42MC4wLjA.",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan.",
+        "stock" : 15
+    },
+    {
+        "name": "Intel I5 10400f",
+        "category": "Hardware",
+        "subCategory": "Processor",
+        "price": 100000,
+        "img": "https://firebasestorage.googleapis.com/v0/b/component-2e6f5.appspot.com/o/i5-10400f.png?alt=media&token=cdf33007-2056-415e-9cf2-a388906fce6b&_gl=1*1biwldb*_ga*ODY5MTE0MzA1LjE2OTQ3ODMxMDU.*_ga_CW55HF8NVT*MTY5NzU4MDQyNC45LjEuMTY5NzU4NDQ2NS41Ni4wLjA.",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan.",
+        "stock" : 25
+    },
+    {
+        "name": "TUF A15",
+        "category": "Equipment",
+        "subCategory": "Notebooks",
+        "price": 100000,
+        "img": "https://firebasestorage.googleapis.com/v0/b/component-2e6f5.appspot.com/o/TUF.png?alt=media&token=777f31cf-f7c8-425a-8f46-98d8f522d4cb&_gl=1*o96srs*_ga*ODY5MTE0MzA1LjE2OTQ3ODMxMDU.*_ga_CW55HF8NVT*MTY5NzU4MDQyNC45LjEuMTY5NzU4NDQ4NS4zNi4wLjA.",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan.",
+        "stock" : 12
+    },
+    {
+        "name": "Cougar Terminator",
+        "category": "Furniture",
+        "subCategory": "Chairs",
+        "price": 200000,
+        "img": "https://firebasestorage.googleapis.com/v0/b/component-2e6f5.appspot.com/o/Cougar.png?alt=media&token=fe9eb036-73b2-43ea-9edd-81dabe438612&_gl=1*uq84vm*_ga*ODY5MTE0MzA1LjE2OTQ3ODMxMDU.*_ga_CW55HF8NVT*MTY5NzU4MDQyNC45LjEuMTY5NzU4NDU4My41OC4wLjA.",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan.",
+        "stock" : 6
+    },
+    {
+        "name": "Aorus B650 Elite AX",
+        "category": "Hardware",
+        "subCategory": "MotherBoards",
+        "price": 260000,
+        "img": "https://firebasestorage.googleapis.com/v0/b/component-2e6f5.appspot.com/o/Aorus.png?alt=media&token=ddbd0ea0-6d72-4b1a-9bcf-5303dfe6d1de&_gl=1*3t4ndo*_ga*ODY5MTE0MzA1LjE2OTQ3ODMxMDU.*_ga_CW55HF8NVT*MTY5NzU4MDQyNC45LjEuMTY5NzU4NDQyNC4zMy4wLjA.",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan.",
+        "stock" : 15
+    },
+    {
+        "name": "IdCooling FrostFlow 120",
+        "category": "Hardware",
+        "subCategory": "Refrigeration",
+        "price": 60000,
+        "img": "https://firebasestorage.googleapis.com/v0/b/component-2e6f5.appspot.com/o/Idcooling.png?alt=media&token=9cba83e9-63b7-42fe-ad90-74249efd477b&_gl=1*9tv81m*_ga*ODY5MTE0MzA1LjE2OTQ3ODMxMDU.*_ga_CW55HF8NVT*MTY5NzU4MDQyNC45LjEuMTY5NzU4NDU0NC4zNy4wLjA.",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan.",
+        "stock" : 10
+    },
+    {
+        "name": "Razer Kraken",
+        "category": "Audio",
+        "subCategory": "Headphones",
+        "price": 95000,
+        "img": "https://firebasestorage.googleapis.com/v0/b/component-2e6f5.appspot.com/o/Razer.png?alt=media&token=f13a703a-4869-4b01-8493-5cb234b01ad0&_gl=1*1czb7xh*_ga*ODY5MTE0MzA1LjE2OTQ3ODMxMDU.*_ga_CW55HF8NVT*MTY5NzU4MDQyNC45LjEuMTY5NzU4NDUwMy4xOC4wLjA.",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan.",
+        "stock" : 10
+    },
+    {
+        "name": "Sentey K20",
+        "category": "Hardware",
+        "subCategory": "ComputerCases",
+        "price": 85000,
+        "img": "https://firebasestorage.googleapis.com/v0/b/component-2e6f5.appspot.com/o/Sentey.png?alt=media&token=30bade01-ba8a-4e9d-9eff-efbeaabe475f&_gl=1*1jn2fuj*_ga*ODY5MTE0MzA1LjE2OTQ3ODMxMDU.*_ga_CW55HF8NVT*MTY5NzU4MDQyNC45LjEuMTY5NzU4NDU1Ni4yNS4wLjA.",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan.",
+        "stock" : 10
+    },
+    {
+        "name": "XPG Spectrix S40G",
+        "category": "Hardware",
+        "subCategory": "Storage",
+        "price": 45000,
+        "img": "https://firebasestorage.googleapis.com/v0/b/component-2e6f5.appspot.com/o/Xpg.png?alt=media&token=673e0c8a-ea8d-421f-976a-91e18a60aa40&_gl=1*13m0tjx*_ga*ODY5MTE0MzA1LjE2OTQ3ODMxMDU.*_ga_CW55HF8NVT*MTY5NzU4MDQyNC45LjEuMTY5NzU4NDU3MC4xMS4wLjA.",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien eu urna aliquam accumsan.",
+        "stock" : 25
+    }
+]

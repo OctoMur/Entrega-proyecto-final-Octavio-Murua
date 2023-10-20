@@ -10,12 +10,10 @@ function ItemDetail() {
     const [productSelect, setProductSelect] = useState({})
     const { id } = useParams()
 
-    console.log(id)
 
 
     useEffect(() => {
-        const product = doc(db, "products", "id")
-        console.log(id)
+        const product = doc(db, "products", id)
 
 
         getDoc(product).then((res) => {
@@ -25,7 +23,6 @@ function ItemDetail() {
                     id: res.id,
                     ...res.data()
                 }
-                console.log(productImport)
                 setProductSelect(productImport)
             }
             else{
