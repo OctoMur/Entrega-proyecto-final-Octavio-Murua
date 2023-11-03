@@ -1,4 +1,4 @@
-import ItemDetailsContaner from "../components/itemDetailsCotaner/ItemDetailsContaner"
+import ItemDetailsContaner from "../components/ItemDetailsContaner/ItemDetailsContaner"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import Layout from "../components/Layout/Layout"
