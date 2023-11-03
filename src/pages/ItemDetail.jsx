@@ -1,7 +1,7 @@
-import ItemDetailsContaner from "../components/itemDetailsCotaner/ItemDetailsContaner"
+import ItemDetailsContaner from "../components/itemDetailsCotaner/ItemDetailsContaner.jsx"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import Layout from "../components/Layout/Layout"
+import Layout from "../components/Layout/Layout.jsx"
 import { doc, getDoc } from "firebase/firestore"
 import { db } from "../db/db"
 

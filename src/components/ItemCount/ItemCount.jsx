@@ -1,5 +1,5 @@
 import { useState } from "react"
-import AddItemButton from "../AddItemButton/AddItemButton"
+import AddItemButton from "../AddItemButton/AddItemButton.jsx"
 
 
 const ItemCount = ({productSelected}) => {

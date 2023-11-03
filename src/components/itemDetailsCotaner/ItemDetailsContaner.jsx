@@ -1,5 +1,5 @@
-import ItemCount from '../ItemCount/ItemCount';
-import './ItemDetailsContaner.css'
+import ItemCount from '../ItemCount/ItemCount.jsx';
+import './itemDetailsContaner.css'
 
 
 function ItemDetailsContaner({ productSelected }) {

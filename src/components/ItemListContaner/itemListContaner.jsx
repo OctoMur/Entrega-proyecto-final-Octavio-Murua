@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import {db} from "../../db/db"
-import ItemCard from "../ItemCard/ItemCard"
-import Layout from "../Layout/Layout"
+import ItemCard from "../ItemCard/ItemCard.jsx"
+import Layout from "../Layout/Layout.jsx"
 import "./itemListContaner.css"
 import { collection, getDocs, query, where } from "firebase/firestore"
 

@@ -1,6 +1,6 @@
 import './App.css'
-import CartContext from './context/CartContext'
-import Navigation from './routes/Navigation'
+import CartContext from './context/CartContext.jsx'
+import Navigation from './routes/Navigation.jsx'
 
 
 function App() {

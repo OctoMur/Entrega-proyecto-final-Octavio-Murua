@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ItemListContaner from "../components/ItemListContaner/itemListContaner"
-import ItemDetail from "../pages/ItemDetail";
-import Cart from "../pages/Cart"
-import CheckOut from "../pages/CheckOut";
+import ItemListContaner from "../components/ItemListContaner/itemListContaner.jsx"
+import ItemDetail from "../pages/ItemDetail.jsx";
+import Cart from "../pages/Cart.jsx"
+import CheckOut from "../pages/CheckOut.jsx";
 
 
 const Navigation = () =>{
