@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import {db} from "../../db/db"
 import ItemCard from "../ItemCard/ItemCard"
 import Layout from "../Layout/Layout"
-import "./ItemListContaner.css"
+import "./itemListContaner.css"
 import { collection, getDocs, query, where } from "firebase/firestore"
 
 
