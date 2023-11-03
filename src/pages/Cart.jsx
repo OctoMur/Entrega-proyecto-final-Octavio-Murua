@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
-import Layout from '../components/Layout/Layout.jsx'
+import Layout from '../components/Layout/Layout'
 import { CartCntxt } from '../context/CartContext'
-import ItemCardToCart from '../components/ItemCardToCart/ItemCardToCart.jsx'
+import ItemCardToCart from '../components/ItemCardToCart/ItemCardToCart'
 import { Link } from 'react-router-dom'
 
 const Cart = () => {

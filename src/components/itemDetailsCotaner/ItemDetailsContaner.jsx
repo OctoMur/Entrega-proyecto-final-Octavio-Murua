@@ -1,4 +1,4 @@
-import ItemCount from '../ItemCount/ItemCount.jsx';
+import ItemCount from '../ItemCount/ItemCount';
 import './itemDetailsContaner.css'
 
 

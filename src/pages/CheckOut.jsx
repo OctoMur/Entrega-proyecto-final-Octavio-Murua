@@ -1,8 +1,8 @@
 import { useContext } from "react"
-import Layout from "../components/Layout/Layout.jsx"
+import Layout from "../components/Layout/Layout"
 import { CartCntxt } from "../context/CartContext"
-import ItemCardChekout from "../components/ItemCardCheckout/ItemCardChekout.jsx"
-import CheckOutForm from "../components/CheckOutForm/CheckOutForm.jsx"
+import ItemCardChekout from "../components/ItemCardCheckout/ItemCardChekout"
+import CheckOutForm from "../components/CheckOutForm/CheckOutForm"
 
 const CheckOut = () => {
     const {cart} = useContext(CartCntxt)
